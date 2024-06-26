@@ -1,7 +1,4 @@
 ﻿using Casabe.Vista.MenuOpciones;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Windows.Input;
 using Xamarin.Forms;
 
@@ -32,8 +29,7 @@ namespace Casabe.VistaModelo
         #endregion
 
         #region COMANDOS
-        public ICommand NavegarLogincommad => new Command(NavegarLogin);
+        public ICommand NavegarLoginCommand => new Command(NavegarLogin);
         #endregion
-
     }
 }

@@ -69,16 +69,10 @@ namespace Casabe.VistaModelo
                 var autenticacion = new FirebaseAuthProvider(new FirebaseConfig(DBConexion.WepApyAuthentication));
                 var authuser = await autenticacion.SignInWithEmailAndPasswordAsync(objusuario.Email.ToString(), objusuario.Clave.ToString());
                 string obternertoken = authuser.FirebaseToken;
-
-                //var Propiedades_NavigationPage = new NavigationPage(new MenuPrincipal(objusuario.Email.ToString()));
-
                 var Propiedades_NavigationPage = new NavigationPage(new MenuPrincipal());
-                //var Propiedades_NavigationPage = new NavigationPage(new MenuPrincipal());
 
                 Propiedades_NavigationPage.BarBackgroundColor = Color.RoyalBlue;
                 App.Current.MainPage = Propiedades_NavigationPage;
-                //Correrbarra = false;
-                //IsVisible = false;
             }
             catch (Exception)
             {

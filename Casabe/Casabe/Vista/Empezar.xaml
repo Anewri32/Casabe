@@ -3,52 +3,27 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
              x:Class="Casabe.Vista.Empezar">
-    <Grid 
-    BackgroundColor="white">
+
+    <Grid BackgroundColor="purple">
         <StackLayout>
-            <forms:AnimationView x:Name="animacion" 
-                             Grid.Row="0"
-                             Animation="rompecorazon.json"
-                             HeightRequest="110"
-                             WidthRequest="80"
-                             AutoPlay="true"
-                             RepeatMode="Infinite"
-                             VerticalOptions="Center"/>
-
-            <StackLayout VerticalOptions="CenterAndExpand"
-                     Spacing="60">
-                <Label Text="Aplicacion de casabes"
-                    VerticalOptions="CenterAndExpand" 
-                    HorizontalOptions="CenterAndExpand" 
-                    FontAttributes="Bold"
-                    FontSize="30"/>
-
-                <Image Source="vico.png"
-                   HeightRequest="140"
-                   BackgroundColor="blue"/>
-
-                <Label Text="Elaborado por: Seccion 707"
-            HorizontalOptions="Center" 
-                   TextColor="red"
-                   FontSize="20"
-                   HorizontalTextAlignment="Center"/>
-            </StackLayout>
-
-            <Grid VerticalOptions="EndAndExpand"
-              Margin="20">
+            <Grid VerticalOptions="EndAndExpand" Margin="20">
+                <Image Source="colibris"
+                        HeightRequest="30"
+                       HorizontalOptions="End"
+                       BackgroundColor="Transparent"
+                       Margin="0,0,18,0"/>
                 <Button Text="Empezar"
-                    TextColor="blue"
-                    BackgroundColor="white"
-                    FontAttributes="Bold"
-                    CornerRadius="50"
-                    Command="{Binding NavegarLogincommand}"/>
+                        TextColor="blue"
+                        BackgroundColor="white"
+                        FontAttributes="Bold"
+                        CornerRadius="50"
+                        Command="{Binding NavegarLoginCommand}"/>
                 <Image Source="logout.png"
-                   HeightRequest="30"
-                   HorizontalOptions="End"
-                   BackgroundColor="Transparent"
-                   Margin="0,0,18,0"/>
+                       HeightRequest="30"
+                       HorizontalOptions="End"
+                       BackgroundColor="Transparent"
+                       Margin="0,0,18,0"/>
             </Grid>
-
         </StackLayout>
     </Grid>
 </ContentPage>

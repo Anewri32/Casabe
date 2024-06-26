@@ -17,6 +17,7 @@ namespace Casabe.Vista
         {
             InitializeComponent();
             BindingContext = new VMEmpezar(Navigation);
+
         }
     }
 }

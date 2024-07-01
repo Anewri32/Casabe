@@ -4,9 +4,55 @@
              x:Class="Casabe.Vista.MenuOpciones.MenuPrincipal">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Casabe aplication!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Bienvenidos al espacio de Casabe!"
+                    HorizontalOptions="CenterAndExpand" />
+            <Frame>
+                <Grid>
+                    
+                    <Image Source="fire.jpg"
+                           Grid.Column="0"
+                           Grid.Row="0"
+                           HeightRequest="40"
+                            HorizontalOptions="Center"
+                            BackgroundColor="Transparent"/>
+                    <Label Text="Mantenimiento"
+                           Grid.Column="0"
+                           Grid.Row="1"
+                            HorizontalOptions="CenterAndExpand" />
+                </Grid>
+                
+                
+            </Frame>
+
+            <Frame>
+                
+
+
+            </Frame>
+
+            <Frame>
+                <Grid>
+                    <Image Source="foto.jpg"
+                           Grid.Column="0"
+                           Grid.Row="0"
+                       HeightRequest="40"
+                        HorizontalOptions="Center"
+                        BackgroundColor="Transparent"/>
+
+                    <Label Text="Anewry Nunez"
+                           Grid.Column="0"
+                           Grid.Row="1"
+                           HorizontalOptions="Center"/>
+                    <Label Text="22-MISM-1-040"
+                           Grid.Column="0"
+                           Grid.Row="2"
+                           HorizontalOptions="Center"/>
+
+                </Grid>
+                
+                
+            </Frame>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

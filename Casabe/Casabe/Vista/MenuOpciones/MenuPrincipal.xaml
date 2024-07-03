@@ -1,20 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
              x:Class="Casabe.Vista.MenuOpciones.MenuPrincipal">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout BackgroundColor="green">
             <Label Text="Bienvenidos al espacio de Casabe!"
                     HorizontalOptions="CenterAndExpand" />
-            <Frame>
+            <Frame BorderColor="Aqua"
+                   Margin="20"
+                   CornerRadius="20">
                 <Grid>
-                    
-                    <Image Source="fire.jpg"
-                           Grid.Column="0"
-                           Grid.Row="0"
-                           HeightRequest="40"
-                            HorizontalOptions="Center"
-                            BackgroundColor="Transparent"/>
+
+                    <forms:AnimationView x:Name="maintenanceanimation"
+                                         Animation="MaintenanceAnimation.json"
+                                        Grid.Row="0"
+                                        Grid.Column="0"
+                                        HeightRequest="100"
+                                        HorizontalOptions="CenterAndExpand"
+                                        WidthRequest="200"
+                                        AutoPlay="true"
+                                        RepeatMode="Infinite">
+                        
+                    </forms:AnimationView>
                     <Label Text="Mantenimiento"
                            Grid.Column="0"
                            Grid.Row="1"
@@ -24,29 +32,54 @@
                 
             </Frame>
 
-            <Frame>
+            <Frame BorderColor="OrangeRed"
+                   Margin="20"
+                   CornerRadius="20">
+                <Grid>
+                    <forms:AnimationView x:Name="reportanimation"
+                                         Animation="ReportAnimation.json"
+                                         Grid.Row="0"
+                                        Grid.Column="0"
+                                        HeightRequest="100"
+                                        HorizontalOptions="CenterAndExpand"
+                                        WidthRequest="200"
+                                        AutoPlay="true"
+                                        RepeatMode="Infinite">
+                        
+
+                    </forms:AnimationView>
+                    <Label Text="Reportar incidencia"
+                           Grid.Row="1"
+                           Grid.Column="0"
+                           HorizontalOptions="CenterAndExpand">
+
+                    </Label>
+
+                </Grid>
+
+                
                 
 
 
             </Frame>
 
-            <Frame>
+            <Frame BorderColor="LightBlue"
+                   Margin="20"
+                   CornerRadius="20">
                 <Grid>
                     <Image Source="foto.jpg"
                            Grid.Column="0"
                            Grid.Row="0"
-                       HeightRequest="40"
+                       HeightRequest="200"
                         HorizontalOptions="Center"
                         BackgroundColor="Transparent"/>
 
-                    <Label Text="Anewry Nunez"
+                    <Label Text="Anewry Nunez 22-MISM-1-040"
                            Grid.Column="0"
                            Grid.Row="1"
-                           HorizontalOptions="Center"/>
-                    <Label Text="22-MISM-1-040"
-                           Grid.Column="0"
-                           Grid.Row="2"
-                           HorizontalOptions="Center"/>
+                           HorizontalOptions="Center"
+                           VerticalOptions="CenterAndExpand"/>
+                    
 
                 </Grid>
                 

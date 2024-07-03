@@ -13,7 +13,7 @@ namespace Casabe
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MenuPrincipal());
+            MainPage = new NavigationPage(new Empezar());
         }
 
         protected override void OnStart()

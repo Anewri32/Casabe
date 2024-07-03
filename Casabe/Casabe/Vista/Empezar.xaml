@@ -32,14 +32,30 @@
 
         <Frame BackgroundColor="Transparent">
             <Grid VerticalOptions="EndAndExpand" Margin="20">
+                <forms:AnimationView x:Name="restanimation"
+                    Animation="RestAnimation.json"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    HeightRequest="100"
+                    HorizontalOptions="CenterAndExpand"
+                    WidthRequest="200"
+                    AutoPlay="true"
+                    RepeatMode="Infinite"
+                    VerticalOptions="Center">
+                    
+                    
+                </forms:AnimationView>
 
 
 
                 <Label Text="Bienvenidos a nuestro proyecto"
                        TextColor="AliceBlue"
                        FontSize="20"
-                       Grid.Row="0"
-                       Grid.Column="1">
+                       Grid.Row="1"
+                       Grid.Column="0"
+                       Grid.ColumnSpan="2"
+                       HorizontalOptions="CenterAndExpand">
                 </Label>
                 <Label
                     Grid.Row="1"

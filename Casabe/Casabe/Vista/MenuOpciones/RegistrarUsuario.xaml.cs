@@ -57,6 +57,16 @@ namespace Casabe.Vista.MenuOpciones
                 await DisplayAlert("Alerta", "Escriba su contraseña", "Ok");
                 return;
             }
+            if (!email.Contains("@") || !email.Contains("."))
+            {
+                await DisplayAlert("Alerta", "Escriba un email valido", "Ok");
+                return;
+            }
+            if (clave.Length < 8)
+            {
+                await DisplayAlert("Alerta", "Escriba una clave de mas de 8 caracteres", "Ok");
+                return;
+            }
             #endregion
 
             #region Logica para crear el usuario

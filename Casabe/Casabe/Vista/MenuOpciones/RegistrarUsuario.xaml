@@ -10,15 +10,15 @@
             VerticalOptions="FillAndExpand">
 
             <Grid
-                BackgroundColor="white"
-                RowDefinitions="60,400"
+                BackgroundColor="purple"
+                RowDefinitions="100,400"
                 RowSpacing="25"
                 Padding="25">
                 <Frame
                     Grid.Row="0"
-                    CornerRadius="15"
+                    CornerRadius="50"
                     BackgroundColor="Transparent"
-                    BorderColor="green">
+                    BorderColor="white">
                     <Label 
                     Text="Registro de Usuario"
                     TextColor="blue"
@@ -30,7 +30,7 @@
                 <Frame Grid.Row="1" 
                        Margin="0,30" 
                        BackgroundColor="Transparent" 
-                       BorderColor="green" 
+                       BorderColor="white" 
                        HasShadow="true"  
                        CornerRadius="50">
                     <StackLayout Padding="15">
@@ -58,7 +58,7 @@
                                 <CheckBox x:Name="chkAceptaTerminos" 
                                           Grid.Row="3" 
                                           Grid.Column="0" 
-                                          Color="blue" 
+                                          Color="green" 
                                           VerticalOptions="Center">
                                 </CheckBox>
                                 <Label Grid.Row="3" 
@@ -85,8 +85,8 @@
 
                         <Button x:Name="btnRegistrar"  
                                 Text="Registrarme" 
-                                BackgroundColor="blue" 
-                                TextColor="white" 
+                                BackgroundColor="white" 
+                                TextColor="blue" 
                                 CornerRadius="15"
                                 Clicked="btnRegistrar_Clicked"/>
                     </StackLayout>

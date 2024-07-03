@@ -67,10 +67,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\login.json" />
-    <None Include="Assets\rompecorazon.json" />
+    <AndroidAsset Include="Assets\animation.json" />
+    <AndroidAsset Include="Assets\login.json" />
+    <AndroidAsset Include="Assets\rompecorazon.json" />
+    <AndroidAsset Include="Assets\RestAnimation.json" />
+    <AndroidAsset Include="Assets\CloudAnimation.json" />
+    <AndroidAsset Include="Assets\MaintenanceAnimation.json" />
+    <AndroidAsset Include="Assets\ReportAnimation.json" />
     <None Include="Resources\AboutResources.txt" />
-    <None Include="Assets\AboutAssets.txt" />
+    <AndroidAsset Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <ItemGroup>

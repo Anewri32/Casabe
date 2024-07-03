@@ -4,7 +4,7 @@
              xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
              x:Class="Casabe.Vista.MenuOpciones.LoginAcceso">
     <StackLayout>
-        <Grid BackgroundColor="blue"
+        <Grid BackgroundColor="purple"
          RowDefinitions="150,*"
      
          RowSpacing="15"
@@ -38,9 +38,9 @@
                     <Grid>
                         <StackLayout Grid.Row="0" 
                               Grid.Column="0">
-                            <forms:AnimationView x:Name="animacion" 
+                            <forms:AnimationView x:Name="cloudanimation" 
                               Grid.Row="0"
-                              Animation="login.json"
+                              Animation="CloudAnimation.json"
                                HeightRequest="60"
                                   HorizontalOptions="End"
                              WidthRequest="200"
@@ -49,7 +49,7 @@
                               VerticalOptions="Center"/>
                         </StackLayout>
                         <StackLayout Grid.Row="0" Grid.Column="1">
-                            <Image Source="key"
+                            <Image Source="key.png"
                             WidthRequest="40"
                             VerticalOptions="CenterAndExpand"/>
                         </StackLayout>
@@ -87,8 +87,8 @@
                     <Button
                  CornerRadius="15"
                  Text="Iniciar sesion"
-                 TextColor="white"
-                 BackgroundColor="blue"
+                 TextColor="blue"
+                 BackgroundColor="white"
                  BorderWidth="3"
                  BorderColor="white"
                  VerticalOptions="EndAndExpand"
@@ -100,7 +100,7 @@
                                 <Span Text="No tienes una cuenta?   " 
                                TextColor="white"/>
                                 <Span Text="Registrate!" 
-                               TextColor="orange" 
+                               TextColor="blue" 
                                FontAttributes="Bold" 
                                TextDecorations="Underline"/>
                             </FormattedString>
